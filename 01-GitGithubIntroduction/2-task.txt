@@ -1,0 +1,39 @@
+1 ls - Bu komanda əsasən, işlədiyimiz unvandakı fayl və qovluqları göstərir.
+
+2 cd - Bu komanda, fərqli fayl və qovluqlar arasında keçid etmək üçün istifadə olunur.
+
+3 cd .. - Bu komanda, olduğumuz ünvandan geri qayıtmaq üçün istifadə olunur.
+
+4 pwd - Cari işlədiyimiz qovluğun tam ünvanını göstərir.
+
+5 mkdir - Yeni qovluq yaratmaq üçün istifadə olunur.
+
+6 rm -(r) - bos ve ya dolu Fayl və ya qovluqları silmək üçün istifadə olunur.
+
+7 rmdir - yalniz bos qovlugu sile bilir.
+
+8 cp -(r) (kocurulen) (hara) - Faylları və ya qovluqları kopyalamaq üçün istifadə olunur.
+
+9 mv (kocurulen) (hara) - Faylları və ya qovluqları köçürmək üçün istifadə olunur.
+
+10 touch - Yeni boş fayl yaratmaq üçün istifadə olunur.
+
+11 clear - terminali temizleyir.
+
+12 vim - Vim adlı mətn redaktorunu açmaq üçün istifadə olunur.
+
+13 find - Sisteminizdə faylları və qovluqları axtarmaq üçün istifadə olunur.
+
+14 ps - İşlər və prosesləri göstərmək üçün istifadə olunur.
+
+15 history - komand tarixcesini görüngosterir.
+
+16 cat - fayl daxilini gösterir.
+
+17 wc - Faylin setır, kelime ve symbol sayısını verir.
+
+18 less - fayli seyfe-seyfe gosterer.
+
+19 tail - faylin sonunnan mueyyen miqdarda yazilari gosterir.
+
+20 uname - emeliyyat sistemi bilgisini verir (versiya).

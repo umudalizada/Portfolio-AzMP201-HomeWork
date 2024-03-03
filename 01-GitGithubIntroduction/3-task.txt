@@ -1,0 +1,59 @@
+1 git init - Bir Git repository (dəstəkləmə) yaradır. Bu, mövcud bir qovluğu Git repository-yə çevirir.
+
+2 git clone <repository_url> - Uzak bir Git repository-nin bir nüsxəsini yerli məlumatlarınıza əlavə edir. Bu komanda, bir proyekti çəkmək üçün istifadə edilir.
+
+3 git status - Faylların və commitlərin hazırda hansı vəziyyətdə olduğunu göstərir.
+
+4 git add <file> - Bir faylı növbəti commit üçün izləməyə əlavə edir.
+
+5 git commit -m "Commit message" - Add etdiyiniz faylları müvəffəqiyyətlə commit edir.
+
+6 git log - Commit tarixçəsini göstərir.
+
+7 git branch - Mövcud braclari siyahısını göstərir.
+
+8 git checkout <branch_name> - Bir dalda işləmək üçün keçid edir.
+
+9 git merge <branch_name> - İki dalı birləşdirir.
+
+10 git remote add origin <remote_url> - Uzak bir repository-ni əlavə edir.
+
+11 git push origin <branch_name> - Yerli commitləri uzaq repository-ə göndərir.
+
+12 git pull origin <branch_name> - Uzaq repository-dən son dəyişiklikləri gətirir və yerli fayllarınıza əlavə edir.
+
+13 git config - Git parametrlərini düzəltmək üçün istifadə olunur. Məsələn, istifadəçi adını və emailini təyin etmək üçün istifadə edilir.
+
+14 git config --global user.name - İstifadəçi qlobal Git konfiqurasiyasını tənzimləmək üçün istifadə olunur. Bu, təyin etdiyimiz parametrlərin bütün repository-lər üçün universal olacağı anlamına gəlir.
+
+15 git help - Yardım məlumatlarını göstərir.
+
+16 git tag - Bir commiti xüsusi bir ad ilə işarələyir.
+
+17 git rm (file) - Faylı silir və yerli depodan götürür.
+
+18 git grep "soz" - fayllarda neyise axtarmaq. 
+
+19 git commit --amend - Son commiti dəyişmək üçün istifadə olunur.
+
+20 git log --since=<date> - Bir tarixdən sonrakı commit tarixçəsini göstərir.
+
+21 git log - Git tarixçəsini göstərir.
+
+22 git reflog - Yapılan əməliyyatların tarixini göstərir.
+
+23 git shortlog - Komitləri qısa bir cədvəl şəklində göstərir.
+
+24 git add . - Bütün faylları işləmə göndərmək üçün hazırla.
+
+25 git branch <umud> - Yeni bir şəbəkə yaratmaq üçün istifadə olunur.
+
+26 git log --oneline - Commit tarixçəsini qısa formada göstərir
+
+27 git mv <kohne-adi> <yeni-adi> - bu komand, faylin adini deyisir.
+
+28 git diff - deyisiklikleri gösterir.
+
+29 git show <commit> - Bir commitin dəyişikliklərini göstərmək üçün istifadə olunur.
+
+30 git config --globa user.email "umudalizadadev@gmail.com"- İstifadəçi qlobal Git konfiqurasiyasını tənzimləmək üçün istifadə olunur. Bu, təyin etdiyimiz parametrlərin bütün repository-lər üçün universal olacağı anlamına gəlir.
