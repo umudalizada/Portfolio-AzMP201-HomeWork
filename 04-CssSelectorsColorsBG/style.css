@@ -1,0 +1,243 @@
+/* body hisseni umumi secim ucun */
+
+*{
+  
+    /* padding: 0;
+    margin: 0;
+    box-sizing: border-box; */
+}
+
+
+/* text yerine toxunan zaman bas veren deyisiklikler */
+
+.div1 input:focus {
+    background-color: aqua;
+    color: red;
+}
+
+
+/* artiq 1 defe girilmis link */
+
+.div2 a:visited {
+    color: rgb(69, 181, 20);
+  }
+
+
+/* linki aktivlesdiren zaman */
+
+.div2 a:active {
+    background: #161414;
+  }
+
+
+/* chekboxa toxunan zaman olacaq deyisiklikler*/
+
+.div4 input:checked{
+    border: none;
+    outline: 2px solid deeppink;
+}
+
+
+/* ul daxilindeki childeri idare etmek ucun */
+
+.div5 ul li:first-child{
+    color: red;
+}
+.div5 ul li:last-child{
+    color:green;
+}
+
+
+/* paraqraflari secmek ucun istifade edilir*/
+
+.div6 p:first-of-type{
+    background-color: red;
+}
+
+
+/* mausla yaxinlasan zaman deyisiklikleri gore bilirik  */
+
+.div7 input:hover{
+    background-color: red;
+}
+
+
+/*  sehvlik olan zaman */
+
+.div8 input:invalid {
+    background-color: ivory;
+    border: none;
+    outline: 2px solid red;
+    border-radius: 5px;
+  }
+  
+
+/* dili axtarmagimiza komek edir */
+
+.div9 :lang(en-US){
+    outline: 2px solid red;
+}
+
+
+/*  xususi renglenme verir */
+
+.div10 input:optional{
+    border-color: rgb(86, 23, 149);
+    border-width: 3px;
+
+}
+
+
+/* placeholdere ve bordere stiller verir */
+
+.div11 input:placeholder-shown{
+    border-color: teal;
+    color: purple;
+    font-style: italic;
+
+}
+
+/* butun yazilar uzerinde deyisiklik ede bilir */
+
+
+*:read-only {
+    font-weight: bold;
+  }
+
+
+/* mutleq doldurulmalidira deyisiklik edir */
+
+.idiv12 input:required{
+    background-color: rgb(255, 0, 0);
+}
+
+
+/* umumi gorunen hisseni deyismek ucun */
+
+:scope {
+    background-color: rgb(226, 178, 178);
+  }
+
+
+  /* istifadeci sehvlikle daxil etmezse calisir  */
+.div13 input:user-invalid {
+    border: 2px solid red;
+  }
+
+
+  /* ID ile ad cagirma */
+ #umud{
+    color: blue;
+ }
+
+
+ /* daxil etme zamani adda boldlasir */
+
+.div14 label:focus-within {
+    font-weight: bold;
+  }
+  
+
+/* linke ad veririk daha ferqli formada */
+
+.div15 a::after {
+    content: "Azerbaycan haqqinda.";
+    background-color: #ffba10;
+    border-color: black;
+    border-style: dotted;
+  }
+
+  /* selector butonunu ferqlendirmek ucun stifade edilir */
+
+  
+.div16 input::file-selector-button {
+    font-weight: bold;
+    color: rgb(55, 67, 79);
+    padding: 0.5em;
+    border: thin solid grey;
+    border-radius: 3px;
+  }
+  
+  /* ilk herifi gozellesdirir */
+
+ .div17 p::first-letter {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: brown;
+  }
+
+/* ilk cumleni gozellesdirir */
+
+
+.div18 p::first-line {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #ffba10;
+  }
+  
+
+  /* istedyiniz simvolla baslada bilirsiniz li-leri */
+
+
+.div19 li::marker {
+    content: 'C ';
+    font-size: 1.2em;
+  }
+  
+
+
+/* sehv yazilari vurgulayir */
+.div20 p::spelling-error {
+    text-decoration: wavy red underline;
+  }
+
+
+
+/* spana birbasa mudaxile */
+
+.div21 span {
+    color: skyblue;
+  }
+
+  /*blok elementler zamani bir nov backgrounddur */
+
+.div22 h2,h3:dir(ltr){
+    background-color: red;
+  }
+
+
+  /* radioda ve checkboxda xususi deyisiklikler */
+.div23 input:default {
+    box-shadow: 0 0 2px 1px coral;
+  }
+
+
+/* 3 box var ama her biri mueyen qeder gorunmez olur*/
+
+.div24 div:empty {
+    outline: 2px solid deeppink;
+    height: 1em;
+  }
+  .box {
+    background: pink;
+    height: 80px;
+    width: 80px;
+  }
+  
+  .box:empty {
+    background: lime;
+  }  
+
+
+  /* xususi hallarda inputlari yonlendirir */
+
+.div25 input:in-range {
+    background-color: rgb(255, 7, 7);
+  }
+  
+
+  /* dayandirila bilmeyen avtovideo */
+
+video:no-button{
+}
