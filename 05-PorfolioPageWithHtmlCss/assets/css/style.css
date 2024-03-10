@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+/* NAVBAR */
+
+
+
+
+nav{
+    font-family: 'Montserrat', sans-serif;
+    background: #2C3E50;
+}
+
+
+.container{
+    margin: 0 auto;
+    width: 1320px;
+}
+.logo{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+    margin: 31px 7px;
+    margin-left: 12;
+
+}
+.navlist a{
+    margin: 0 24px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+.fornav{
+    height: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navlist a:hover{
+    color: #1ABC9C;
+    transition: 0.4s;
+
+}
+
+
+
+
+/* HEADER */
+
+
+
+
+
+header{
+    background: #1ABC9C;
+}
+.forheader{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1ABC9C;
+    height: 678.54px;
+
+
+}
+
+
+.line{
+    margin: 0 16px;
+    width: 112px;
+    height: 4px;
+    background: #FFFFFF;
+
+}
+
+.star{
+    margin-top: 20px ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.avatar{
+    width: 239.26px;
+    height: 254.54px;
+    margin-top: 96px;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 64px;
+    margin-top: 47.99px;
+    color: #FFFFFF;
+}
+
+
+.forheader p{
+    font-family: Lato;
+    margin-bottom: 96.51px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 23.5px;
+    color: #FFFFFF;
+}
+
+
+
+
+
+/* PORTFOLIO */
+
+
+
+
+
+
+
+#porfolio{
+    margin-top: 95px;
+    height: 947px;
+    background-color: #FFFFFF;
+}
+
+.firstsection{
+    margin-top: 95.9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.firstsection h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color:  #2C3E50;
+
+
+}
+.second{
+    margin-top: 20px;
+}
+
+.secondlines{
+    margin: 0 16px;
+    width: 112px;
+    height: 4px;
+    background: #2C3E50;
+
+}
+
+
+
+
+
+.imagerow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.firstrow{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+}
+.secondrow{
+    display: flex;
+    flex-direction: row;
+    margin-top: 47.99px;
+}
+
+
+.firstlineimage{
+    border-radius: 8px;
+    width: 400px;
+    height: 288.88px;
+    margin: 0 40px;
+    display: flex;
+    flex-direction: row;
+}
+.firstlineimage img{
+    border-radius: 8px;
+}
+
+.secondline{
+    border-radius: 8px;
+    width: 400px;
+    height: 288.88px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 40px;
+}
+.secondline img{
+    border-radius: 8px;
+}
+
+
+
+
+/* ABOUT */
+
+
+#about{
+    margin-top: 96px ;
+    background-color: #1ABC9C;
+
+}
+
+.secondsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.secondsection h2{
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 96px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+.firsttext{
+    margin: 0 12px;
+    color: #FFFFFF;
+    font-family: Lato;
+    width: 416px;
+    height: 150px;
+    margin-top: 24px;
+}
+
+.secondtext{
+    margin: 0 12px;
+    color: #FFFFFF;
+    font-family: Lato;
+    margin-top: 24px;
+    width: 416px;
+    height: 120px;
+}
+
+.buton button{
+    font-family: Lato;
+    margin-top: 24px;
+    margin-bottom: 96px;
+    width: 232.5px;
+    height: 66px;
+    color: #F8F9FA;
+    border-radius: 8px;
+    border: solid #F8F9FA 1px;
+    background-color: #1ABC9C;
+
+    
+}
+
+.buton button:hover{
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    transition: 0.4s;
+}
+
+
+
+/* CONTACT */
+
+.thirdsection{
+    margin-top: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 96px;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form input{
+    border-top: solid 0px;
+    border-left: solid 0px;
+    border-right: solid 0px;
+    margin-top: 24px;
+    width: 746px;
+    height: 88px;
+}
+form input:focus-within{
+    outline: none; 
+    border-top: none; 
+    border-left: none; 
+    border-right: none;
+
+}
+
+.inputs{
+    margin-top: 16px;
+}
+
+label{
+    color: #6C757D;
+    font-size: 24px;
+    font-family: Lato;
+    font-weight: 400;
+    margin-top: 16px;
+}
+form textarea{
+    border-top: solid 0px;
+    border-left: solid 0px;
+    border-right: solid 0px;
+    margin-top: 16px;
+    width: 746px;
+    height: 88px;
+}
+
+button{
+    font-family: Lato ;
+    margin-top: 16px;
+    background-color: #1ABC9C;
+    border: solid 0px;
+    width: 103.4px;
+    height: 66px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+textarea:focus{
+    outline: none; 
+    border-top: none; 
+    border-left: none; 
+    border-right: none;
+}
+
+
+
+
+
+/* FOOTER */
+
+
+
+
+footer{
+    background-color:#2C3E50;
+}
+
+.forfooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 272.8px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 440px;
+    height: 112.08px;
+    margin: 80px 0px;
+}
+.row h3{
+    color:#FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24.7px;
+}
+.pelemnt{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Lato", sans-serif;
+}
+
+.pelemnt a{
+    text-decoration: none;
+    color: #1ABC9C;
+    font-weight: 400;
+}
+
+
+
+/* location end */
+
+
+
+
+
+.icons{
+    display: flex;
+}
+
+.social{
+    width: 52px;
+    height: 52px;
+    border: solid #FFFFFF 2px;
+    border-radius: 100%;
+    margin: 0 5.4px;
+    color: #F8F9FA;
+}
+
+.social:hover{
+    background-color: #FFFFFF;
+    color: #1A252F;
+    transition: 0.4s;
+
+    
+}
+
+
+
+.social i{
+    margin: 16px;
+    font-size: 20px;
+
+
+
+}
+
+
+
+/* ABOUTFREELANCER */
+#secondfooter{
+    background-color: #1A252F;
+
+}
+
+
+
+.secondfooter{
+    font-family: Lato;
+    color: #FFFFFF;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+   
+}
+
+
