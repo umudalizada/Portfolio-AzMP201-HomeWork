@@ -1,0 +1,1173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#top{
+    padding: 10px;
+    background-color:#F5F5F5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fornav{
+    display: flex;
+    align-items: center;
+   
+}
+
+
+.firsticon{
+    display: flex;
+    padding-left: 10px;
+}
+
+.month{
+    margin-left: 15px;
+}
+
+
+
+.telephone{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-right: 50px;
+}
+
+.number{
+    display: flex;
+}
+
+.social{
+    gap: 20px;
+    display: flex;
+}
+
+
+.icon{
+    display: flex;
+
+    padding: 10px;
+    background-color: white;
+}
+i{
+    color: #AB7442;
+}
+
+#secondnav{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    width: 100%;
+    
+}
+
+.forsecond{
+    
+    padding: 10px;
+    width: 93%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    font-weight: 400;
+
+}
+.pages{
+    position: relative;
+
+}
+
+.pages a{
+    color: saddlebrown ;
+}
+.forpages{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top: 40px;
+    padding: 5px 80px 10px 10px;
+    background-color: white;
+    display: none;
+}
+
+.pages:hover .forpages{
+    display: flex;
+    transition: 0.4s;
+}
+
+.home{
+    color: #AB7442;
+}
+
+h1{
+    font-size: 50px;
+    color: #AB7442;
+    padding-left: 10px;
+    margin-left: 30px;
+    
+}
+.hamburger{
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 50px;
+    height: 50px;
+    margin-right: -20px;
+
+
+
+}
+.hamburger i{
+    margin: 5px;
+    margin-left: 8px;
+
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    padding: 20px;
+    background-color: #AB7442;
+    border: 0px;
+    color: white;
+}
+
+header{
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, rgba(47, 47, 50, 0.52), rgba(68, 67, 68, 0.73)), url(../img/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+
+}
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.postition{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.two{
+    background-color: white;
+    color: #AB7442;
+    padding: 20px;
+    width: 150px;
+}
+.one{
+    background-color: #AB7442;
+    color: white;
+    padding: 20px;
+    width: 150px;
+}
+h4{
+    color: white;
+    font-size: 20px;
+}
+
+h2{
+    color: white;
+    font-size: 50px;
+}
+
+.pone{
+    color: white;
+    font-size: 20px;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.hamburger{
+    display: none;
+    font-size: 40px;
+}
+
+
+/* NAV 2 */
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* For tablets: */
+    .hamburger{
+        display: block;
+    }
+    #top{
+        display: none;
+    }
+    ul{
+        display: none;
+    }
+    .getaquit{
+        display: none;
+    }
+    h1{
+        font-size: 40px;
+    }
+   
+}
+
+
+
+  @media only screen and (max-width: 767px) {
+    .hamburger{
+        display: block;
+    }
+    #top{
+        display: none;
+    }
+    ul{
+        display: none;
+    }
+    .getaquit{
+        display: none;
+    }
+    h1{
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+.sectionone{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+}
+
+.mincards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px
+}
+
+.cardsicon i{
+    font-size: 40px;
+}
+
+.numberss{
+    font-size: 70px;
+    font-weight: 700;
+    color:#F5F5F5;
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    /* For tablets: */
+    .sectionone{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 10px 50px 10px 50px;
+    }
+   
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .sectionone{
+        display: grid;
+        grid-template-columns: auto;
+        padding: 10px 50px 10px 50px;
+    }
+}
+#secondsection{
+    max-width: 100%;
+    background-color: white;
+}
+
+.sectiontwo{
+    max-width: 100%;
+    display: flex;
+}
+.bigimage{
+    width: 50%;
+}
+
+.bigimage img{
+    width: 100%;
+    height: 450px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 70px;
+}
+
+.aboutH2{
+    color: black;
+    font-size: 40px;
+}
+.aboutbox{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    gap: 20px;
+}
+.aboutbox-1{
+    width: 50%;
+    display: flex;
+}
+.explore{
+    margin-top: 20px;
+}
+
+.aboutbox-1 i{
+    display: flex;
+    font-size:40px ;
+    gap: 20px;
+}
+.happy{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 50%;
+}
+.happy p{
+    font-size: 30px;
+    color: #AB7442;
+}
+
+
+
+
+/* SECTION 2  */
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    /* For tablets: */
+    #secondsection{
+        background-color: white;
+    }
+
+    .sectiontwo{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .bigimage{
+        width: 100%;
+    }
+    .bigimage img{
+        padding: 30px 30px 20px 30px;
+        width: 100%;
+        height: 450px;
+    }
+    .about{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        width: 100%;
+        padding: 30px 30px 20px 30px;
+
+    
+    
+    
+    }
+    .explore{
+        margin-top: 20px;
+        width: 50%;
+    }
+    .aboutH2{
+        color: black;
+        font-size: 30px;
+    }
+   
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+    #secondsection{
+        background-color: white;
+    }
+
+    .sectiontwo{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .bigimage{
+        width: 100%;
+    }
+    .bigimage img{
+        padding: 30px 30px 20px 30px;
+        width: 100%;
+        height: 300px;
+    }
+    .about{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        width: 100%;
+        padding: 30px 30px 20px 30px;
+    
+    }
+    .aboutbox-1{
+        width: 50%;
+        display: flex;
+
+    
+    }
+
+
+    .aboutbox{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        gap: 30px;
+    
+    }
+    .explore{
+        margin-top: 20px;
+        width: 50%;
+    }
+    .aboutH2{
+        color: black;
+        font-size: 25px;
+    }
+    
+    
+
+}
+
+.service{
+    padding-top: 50px;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.forpost{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.post{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 450px 450px;
+    gap: 30px;
+    padding-top: 50px;
+  
+}
+
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding-bottom: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}   
+
+.cards img{
+    height: 250px;
+    width: 100%;
+}
+
+.words h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+.cards p{
+    font-weight: 400;
+}
+
+.cards a{
+    color:#AB7442 ;
+    font-size: 20px;
+    font-weight: 700;
+}
+.words{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 5px 10px 5px 10px;
+}
+
+.qualityfor{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* SECTION 3 */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* For tablets: */
+    .post{
+        grid-template-columns: 1fr 1fr ;
+        padding: 10px 50px 10px 50px;
+    }
+    .service{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .cards h3{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .cards{
+        gap: 25px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .post{
+        grid-template-columns: 1fr ;
+      
+    }
+    .service{
+        font-size: 25px;
+    }
+    .cards h3{
+        font-size: 20px;
+    }
+    .cards{
+        gap: 20px;
+    }
+
+    
+
+
+}
+
+
+
+.sectionfour{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.choose{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 50px 60px 50px;
+}
+
+.imagechoose{
+    width: 100%;
+}
+
+.imagechoose img{
+    width: 100%;
+    height: 450px;
+}
+
+.choosebox{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    
+}
+.quality{
+    display: flex;
+    gap: 20px;
+}
+
+.quality i{
+    font-size: 40px;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* For tablets: */
+    .sectionfour{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .imagechoose img{
+        width: 100%;
+        height: 450px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    
+
+
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .sectionfour{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .imagechoose img{
+        width: 100%;
+        height: 450px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    
+
+
+}
+
+#fivesection{
+    width: 100%;
+}
+.fivesections{
+    display: flex;
+    margin-top: 80px;
+    
+}
+
+.free{
+   
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.freeh2{
+    color: black;
+    font-size: 40px;
+}
+.fivebigimage{
+    width: 100%;
+
+}
+.fivebigimage img{
+    width: 100%;
+    height: 450px;
+
+}
+
+.formone{
+    width: 100%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 60px 60px 60px 60px;
+}
+
+.formone input{
+    width: 100%;
+    border: solid 0px ;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.formone textarea{
+    width: 100%;
+    border: solid 0px ;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.formone section option{
+    width: 100%;
+    border: solid 0px ;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+} 
+.formone button{
+    width: 100%;
+    border: solid 0px ;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+
+textarea{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.submit{
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* For tablets: */
+    .fivesections{
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    .fivebigimage{
+        width: 100%;
+    
+    }
+    .fivebigimage img{
+        width: 100%;
+        height: 450px;
+        padding-left: 30px;
+        padding-right: 30px;
+    
+    }
+    .free{
+   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    
+    }
+    .formone{
+        width: 100%;
+        gap: 20px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 60px 60px 60px 60px;
+    }
+    .freeh2{
+        color: black;
+        font-size: 30px;
+    }
+    
+
+
+
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .fivesections{
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    .fivebigimage{
+        width: 100%;
+    
+    }
+    .fivebigimage img{
+        width: 100%;
+        height: 450px;
+        padding-left: 30px;
+        padding-right: 30px;
+    
+    }
+    .free{
+   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    
+    }
+    .formone{
+        width: 100%;
+        gap: 20px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 60px 60px 60px 60px;
+    }
+    .freeh2{
+        color: black;
+        font-size: 25px;
+    }
+
+    
+
+
+}
+
+#team{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.teams{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 60px;
+}
+
+.members{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 20px;
+    
+}
+
+.members img{
+    width: 100%;
+}
+
+.teamssss h3{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* For tablets: */
+    .teams{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .teamssss h3{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+
+
+
+
+
+}
+
+@media only screen and (max-width: 767px) {
+    .teams{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .teamssss h3{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    
+
+
+}
+
+
+footer{
+    background-color: #313131;
+    margin-top: 60px;
+}
+
+.footer{
+    padding: 40px 30px 20px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    color: white;
+
+}
+.fotricon{
+    display: flex;
+}
+
+
+.adtelmes{
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+.adtelmes i{
+    color: white;
+}
+.ii{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotricon{
+    display: flex;
+    gap: 10px;
+}
+
+.footservice{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    
+}
+.forservices{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.forservices a{
+    color: white;
+}
+
+.quick{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+.forquick{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+.forquick a{
+    color: white;
+}
+.newsletter p{
+    max-width: 100%;
+    
+}
+.newsletter{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.forfootform{
+    width: 50%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.forfootform form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 0;
+}
+
+.forfootform form input{
+    width: 100%;
+    height: 80%;
+    padding-left: 20px ;
+}
+.forfootform form .submit{
+    padding: 5px;
+    height: 80%;
+    background-color: #AB7442;
+    border: solid 0;
+    color: white;
+
+}
+
+.altfootr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid white;
+    height: 60px;
+    padding: 0 30px ;
+
+}
+
+.altfootr p{
+    color: white;
+}
+.altfootr a{
+    color: white;
+}
+
+.ii:hover{
+    background-color: white;
+    transition: 0.4s;
+    
+
+}
+
+.ii:hover i{
+    color: #313131;
+    transition: 0.4s;
+    
+
+}
+.forservices p a:hover {
+    color: #AB7442;
+    transition: 0.4s;
+}
+
+.forservices p:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.forquick p a:hover {
+    color: #AB7442;
+    transition: 0.4s;
+}
+
+.forquick p:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.sticky{
+    width: 50px;
+    height: 50px;
+    background-color: #AB7442;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.sticky a i{
+    color: white;
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* For tablets: */
+    .footer{
+        padding: 40px 30px 20px 60px;
+        display: grid;
+        grid-template-columns:  auto auto;
+        gap: 60px;
+        color: white;
+    
+    }
+    .forfootform form .submit{
+        padding: 5px;
+        height: 80%;
+        background-color: #AB7442;
+        border: solid 0;
+        color: white;
+    
+    }
+    .altfootr{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid white;
+        height: 60px;
+        padding: 0 30px ;
+    
+    }
+
+
+
+
+
+}
+
+@media only screen and (max-width: 767px) {
+    .footer{
+        padding: 40px 30px 20px 60px;
+        display: grid;
+        grid-template-columns:  auto;
+        gap: 60px;
+        color: white;
+    
+    }
+    .forfootform form .submit{
+        padding: 5px;
+        height: 80%;
+        background-color: #AB7442;
+        border: solid 0;
+        color: white;
+    
+    }
+    .altfootr{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid white;
+        height: 60px;
+        padding: 0 30px ;
+    
+    }
+
+
+}
+
+
