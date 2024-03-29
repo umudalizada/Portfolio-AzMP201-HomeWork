@@ -1,0 +1,125 @@
+
+#browse{
+    margin-top: 4rem;
+    
+    .browse{
+        margin-top: 4rem;
+            background-color: #F0F0F0;
+            border-radius: 2rem;
+            padding: 5rem;
+            h2{
+                font-size: 4.8rem;
+                color: #000;
+                font-weight: 700;
+                text-align: center;
+            }
+        .forbrowse{
+            padding-top: 5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 28rem 28rem;
+            gap: 2rem;
+            .casual{
+                background-image: url(../../images/image\ 11.svg);
+                grid-area: 1/ 1/ span 1 / span 1;
+                background-color: #fff;
+                border-radius: 2rem;
+                background-repeat: no-repeat;
+                background-size: cover;
+    
+                h4{
+                    font-size: 4rem;
+                    font-weight: 700;
+                    margin-top: 2.5rem;
+                    margin-left: 3.6rem;
+                    
+                }
+            }
+            .formal{
+                background-image: url(../../images/image\ 13.svg);
+                grid-area: 1/ 2/ span 1 / span 2;
+                background-color: #fff;
+                border-radius: 2rem;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+    
+                h4{
+                    font-size: 4rem;
+                    font-weight: 700;
+                    margin-top: 2.5rem;
+                    margin-left: 3.6rem;
+                }
+            }
+            .party{
+                background-image: url(../../images/image\ 12.svg);
+                grid-area: 2/1/ span 1 / span 2;
+                background-color: #fff;
+                border-radius: 2rem;
+                background-repeat: no-repeat;
+                background-size: cover;
+    
+                h4{
+                    font-size: 4rem;
+                    font-weight: 700;
+                    margin-top: 2.5rem;
+                    margin-left: 3.6rem;
+                }
+            }
+            .gym{
+                background-image: url(../../images/image\ 14.svg);
+                grid-area: 2/3 span 1/ span 2;
+                background-color: #fff;
+                border-radius: 2rem;
+                background-repeat: no-repeat;
+                background-size: cover;
+                h4{
+                    font-size: 4rem;
+                    font-weight: 700;
+                    margin-top: 2.5rem;
+                    margin-left: 3.6rem;
+                }
+            }
+    
+        }
+    }
+}
+    
+    
+    
+    
+    
+    
+@media only screen and (max-width: 992px) {
+        #browse{
+            .browse{
+                .forbrowse{
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 28rem 28rem 28rem 28rem;
+                    .casual{
+                        grid-area: 1/1/ span 1/ span 1;
+                        width: 100%;
+                    }
+                    .formal{
+                        grid-area: 2/1/ span 1/ span 1;
+                        width: 100%;
+                    }
+                    .party{
+                        grid-area: 3/1/ span 1/ span 1;
+                        width: 100%;
+                    }
+                    .gym{
+                        grid-area: 4/1/ span 1/ span 1;
+                        width: 100%;
+                    }
+            }
+
+        }
+            
+}
+
+
+
+    
+
+}

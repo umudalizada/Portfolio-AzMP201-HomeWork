@@ -1,0 +1,539 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 124rem;
+}
+
+nav {
+  padding: 2.4rem 0;
+}
+
+.top {
+  background-color: #000;
+  height: 3.8rem;
+  padding: 1rem 0;
+}
+.top p {
+  font-size: 1.3rem;
+}
+.top img {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .top {
+    width: 100%;
+  }
+  .top img {
+    display: none;
+  }
+}
+.fornav {
+  display: flex;
+  align-items: center;
+}
+.fornav h1 {
+  font-size: 3.2rem;
+}
+.fornav h1 img {
+  display: none;
+}
+.fornav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  margin-left: 2rem;
+}
+.fornav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.fornav .forsearch {
+  margin-top: -1rem;
+  display: flex;
+  align-items: center;
+  width: 57.7rem;
+  height: 4.8rem;
+  margin-left: 4rem;
+  background-color: #F0F0F0;
+  border-radius: 6.2rem;
+  padding: 0 1.5rem;
+}
+.fornav .forsearch input {
+  padding: 0 2rem;
+  border: none;
+  width: 100%;
+  height: 100%;
+  margin-left: 2rem;
+  border-radius: 6.2rem;
+  background-color: transparent;
+}
+.fornav .forsearch input:focus {
+  outline: 0;
+}
+.fornav .icons {
+  display: flex;
+  margin-left: 4.5rem;
+  margin-top: -1rem;
+  gap: 2em;
+}
+.fornav .icons .search {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .fornav {
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .fornav h1 {
+    display: flex;
+    gap: 1rem;
+  }
+  .fornav h1 img {
+    display: block;
+  }
+  .fornav ul {
+    display: none;
+  }
+  .fornav .forsearch {
+    display: none;
+  }
+  .fornav .icons .search {
+    display: block;
+  }
+}
+#about {
+  background-color: #F2F0F1;
+}
+
+.forabout {
+  width: 100%;
+  display: flex;
+  margin-top: 2.4rem;
+}
+.forabout .left {
+  padding-bottom: 5rem;
+  width: 50%;
+  height: 100%;
+}
+.forabout .left h2 {
+  font-size: 6.4rem;
+  font-weight: 700;
+  margin-top: 9rem;
+  color: #000000;
+}
+.forabout .left p {
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 2.5rem;
+}
+.forabout .left button {
+  width: 21rem;
+  height: 5.2rem;
+  border-radius: 6.2rem;
+  background-color: #000000;
+  color: #fff;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+.forabout .left .people {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.forabout .left .people .line {
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  margin: 0 3.2rem;
+}
+.forabout .left .people h3 {
+  font-size: 4rem;
+}
+.forabout .left .people p {
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 0;
+}
+.forabout .left .people .one {
+  border-right: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+.forabout .left .people .two {
+  border-right: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+.forabout .right {
+  width: 50%;
+  position: relative;
+  background-image: url(../../images/Rectangle\ 2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 90% center;
+}
+.forabout .right .minstar {
+  position: absolute;
+  top: 40%;
+}
+.forabout .right .bigstar {
+  position: absolute;
+  top: 15%;
+  right: -3%;
+}
+
+.brands {
+  width: 100%;
+  padding: 4.4rem 0;
+  background-color: #000000;
+}
+.brands .gridbrand {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 992px) {
+  #about .forabout {
+    flex-direction: column;
+    padding: 0 6rem;
+  }
+  #about .forabout .left {
+    width: 100%;
+  }
+  #about .forabout .left h2 {
+    font-size: 4.8rem;
+  }
+  #about .forabout .left .people {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  #about .forabout .left .people .thri {
+    grid-area: 2/1 span 1/span 2;
+    width: 33.3%;
+  }
+  #about .forabout .left .people .one {
+    width: 33.3%;
+  }
+  #about .forabout .left .people .two {
+    width: 33.3%;
+  }
+  #about .forabout .right {
+    display: none;
+  }
+  #about .forabout .right img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #brandsss .brands {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  #brandsss .brands .gridbrand {
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  #brandsss .brands .gridbrand .brand img {
+    width: 100%;
+  }
+  #brandsss .brands .gridbrand .zara img {
+    width: 100%;
+    height: 80%;
+  }
+}
+.forarrival {
+  padding-top: 7.2rem;
+  padding-bottom: 6.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.forarrival h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+.forarrival button {
+  margin-top: 3.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  width: 21.8rem;
+  height: 5.2rem;
+  border-radius: 6.2rem;
+  padding: 1.6rem 5.4rem;
+  background-color: transparent;
+  color: #000;
+}
+.forarrival .post {
+  margin-top: 5rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.forarrival .post .card {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.forarrival .post .card .postimg {
+  width: 100%;
+  height: 30rem;
+}
+.forarrival .post .card h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-top: 1.6rem;
+}
+.forarrival .post .card h6 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #000;
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.forarrival .post .card h6 del {
+  color: rgba(0, 0, 0, 0.4);
+}
+.forarrival .post .card h6 p {
+  background-color: rgba(255, 51, 51, 0.1019607843);
+  color: #FF3333;
+  border-radius: 62px;
+  margin-top: 0.7rem;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+.forarrival .post .card .star {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+.forarrival .post .card .star img {
+  width: 1.8rem;
+}
+.forarrival .post .card .star span {
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .forarrival {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .forarrival .post {
+    grid-template-columns: 1fr 1fr;
+  }
+  .forarrival .post .lastcard {
+    display: none;
+  }
+  .forarrival .post .star {
+    width: 100%;
+  }
+}
+.forarrival {
+  padding-top: 7.2rem;
+  padding-bottom: 6.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.forarrival h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+.forarrival button {
+  margin-top: 3.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  width: 21.8rem;
+  height: 5.2rem;
+  border-radius: 6.2rem;
+  padding: 1.6rem 5.4rem;
+  background-color: transparent;
+  color: #000;
+}
+.forarrival .post {
+  margin-top: 5rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.forarrival .post .card {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.forarrival .post .card .postimg {
+  width: 100%;
+  height: 30rem;
+}
+.forarrival .post .card h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-top: 1.6rem;
+}
+.forarrival .post .card h6 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #000;
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.forarrival .post .card h6 del {
+  color: rgba(0, 0, 0, 0.4);
+}
+.forarrival .post .card h6 p {
+  background-color: rgba(255, 51, 51, 0.1019607843);
+  color: #FF3333;
+  border-radius: 62px;
+  margin-top: 0.7rem;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+.forarrival .post .card .star {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+.forarrival .post .card .star img {
+  width: 1.8rem;
+}
+.forarrival .post .card .star .some {
+  width: 1rem;
+}
+.forarrival .post .card .star span {
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .forarrival button {
+    width: 100%;
+  }
+  .forarrival .post {
+    grid-template-columns: 1fr 1fr;
+  }
+  .forarrival .post .lastcard {
+    display: none;
+  }
+}
+#browse {
+  margin-top: 4rem;
+}
+#browse .browse {
+  margin-top: 4rem;
+  background-color: #F0F0F0;
+  border-radius: 2rem;
+  padding: 5rem;
+}
+#browse .browse h2 {
+  font-size: 4.8rem;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+}
+#browse .browse .forbrowse {
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 28rem 28rem;
+  gap: 2rem;
+}
+#browse .browse .forbrowse .casual {
+  background-image: url(../../images/image\ 11.svg);
+  grid-area: 1/1/span 1/span 1;
+  background-color: #fff;
+  border-radius: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#browse .browse .forbrowse .casual h4 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-left: 3.6rem;
+}
+#browse .browse .forbrowse .formal {
+  background-image: url(../../images/image\ 13.svg);
+  grid-area: 1/2/span 1/span 2;
+  background-color: #fff;
+  border-radius: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#browse .browse .forbrowse .formal h4 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-left: 3.6rem;
+}
+#browse .browse .forbrowse .party {
+  background-image: url(../../images/image\ 12.svg);
+  grid-area: 2/1/span 1/span 2;
+  background-color: #fff;
+  border-radius: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#browse .browse .forbrowse .party h4 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-left: 3.6rem;
+}
+#browse .browse .forbrowse .gym {
+  background-image: url(../../images/image\ 14.svg);
+  grid-area: 2/3 span 1/span 2;
+  background-color: #fff;
+  border-radius: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#browse .browse .forbrowse .gym h4 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-left: 3.6rem;
+}
+
+@media only screen and (max-width: 992px) {
+  #browse .browse .forbrowse {
+    grid-template-columns: 1fr;
+    grid-template-rows: 28rem 28rem 28rem 28rem;
+  }
+  #browse .browse .forbrowse .casual {
+    grid-area: 1/1/span 1/span 1;
+    width: 100%;
+  }
+  #browse .browse .forbrowse .formal {
+    grid-area: 2/1/span 1/span 1;
+    width: 100%;
+  }
+  #browse .browse .forbrowse .party {
+    grid-area: 3/1/span 1/span 1;
+    width: 100%;
+  }
+  #browse .browse .forbrowse .gym {
+    grid-area: 4/1/span 1/span 1;
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */
