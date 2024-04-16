@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.forProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.forProjects .about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 300px;
+}
+.forProjects .about h5 {
+  color: red;
+  text-align: center;
+  letter-spacing: 5px;
+}
+.forProjects .about h2 {
+  font-size: 34px;
+  text-align: center;
+}
+.forProjects .about p {
+  color: darkgrey;
+  text-align: center;
+}
+.forProjects .cards {
+  display: flex;
+  gap: 40px;
+}
+.forProjects .cards .card {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.forProjects .cards .card img {
+  width: 100%;
+}
+.forProjects .cards .card h3 {
+  margin: 10px 0;
+}
+.forProjects .cards .card p {
+  margin: 10px 0;
+  color: grey;
+}
+.forProjects .cards .card h4 {
+  color: orange;
+  margin: 10px 0;
+}
+.forProjects .cards .check {
+  padding: 15px 5px;
+  border-top: 0.5px solid gray;
+  border-bottom: 0.5px solid gray;
+}
+.forProjects .cards .check div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.forProjects .cards .check div h6 {
+  font-size: 14px;
+}
+.forProjects .cards .check div .icon {
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.forProjects .cards .check div .icon i {
+  color: white;
+}
+.forProjects .cards .check p {
+  display: none;
+}
+.forProjects button {
+  padding: 10px 30px;
+  background-color: rgb(0, 119, 255);
+  border-radius: 8px;
+  border: none;
+}
+.forProjects button a {
+  text-decoration: none;
+  color: white;
+}
+
+.fortodo {
+  text-align: center;
+}
+.fortodo form input {
+  width: 40%;
+}
+.fortodo form .toDoAdd {
+  width: 5%;
+}
+
+.todocontainer {
+  background-color: orange;
+  max-width: 800px;
+  padding: 40px 0;
+  border-radius: 32px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.todocontainer h1 {
+  font-size: 34px;
+  color: white;
+}
+.todocontainer form {
+  width: 100%;
+}
+.todocontainer form input {
+  width: 80%;
+  border: none;
+  height: 30px;
+  border-radius: 8px;
+}
+.todocontainer form button {
+  height: 30px;
+  border: none;
+  width: 50px;
+  border-radius: 8px;
+}
+.todocontainer ul {
+  list-style-type: none;
+  width: 60%;
+}
+.todocontainer ul li {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todocontainer button {
+  border: none;
+  margin: 10px;
+}
+.todocontainer #delete-all-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+}/*# sourceMappingURL=main.css.map */
