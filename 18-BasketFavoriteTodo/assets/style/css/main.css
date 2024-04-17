@@ -1,0 +1,322 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.forProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.forProjects .about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 300px;
+}
+.forProjects .about h5 {
+  color: red;
+  text-align: center;
+  letter-spacing: 5px;
+}
+.forProjects .about h2 {
+  font-size: 34px;
+  text-align: center;
+}
+.forProjects .about p {
+  color: darkgrey;
+  text-align: center;
+}
+.forProjects .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 auto;
+}
+.forProjects .cards .card {
+  padding: 5px 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  max-width: 380px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.forProjects .cards .card img {
+  width: 100%;
+  height: 50%;
+}
+.forProjects .cards .card h3 {
+  padding: 0 10px;
+  margin: 20px 0;
+}
+.forProjects .cards .card p {
+  padding: 0 10px;
+  color: grey;
+}
+.forProjects .cards .card h4 {
+  padding: 0 10px;
+  color: orange;
+}
+.forProjects .cards .card .basketfav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.forProjects .cards .card .basketfav .fa-heart {
+  font-size: 30px;
+  color: red;
+}
+.forProjects .cards .card .basketfav .fa-shopping-basket {
+  font-size: 30px;
+  color: greenyellow;
+}
+
+.forbasket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.forbasket .about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 300px;
+}
+.forbasket .about h5 {
+  color: red;
+  text-align: center;
+  letter-spacing: 5px;
+}
+.forbasket .about h2 {
+  font-size: 34px;
+  text-align: center;
+}
+.forbasket .about p {
+  color: darkgrey;
+  text-align: center;
+}
+.forbasket .about .fa-delete-left {
+  font-size: 50px;
+  text-align: center;
+  color: red;
+}
+.forbasket .basketCards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 auto;
+}
+.forbasket .basketCards .card {
+  padding: 5px 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  max-width: 380px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.forbasket .basketCards .card img {
+  width: 100%;
+  height: 50%;
+}
+.forbasket .basketCards .card h3 {
+  padding: 0 10px;
+  margin: 20px 0;
+}
+.forbasket .basketCards .card p {
+  padding: 0 10px;
+  color: grey;
+}
+.forbasket .basketCards .card h4 {
+  padding: 0 10px;
+  color: orange;
+}
+.forbasket .basketCards .card .basketfav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.forbasket .basketCards .card .basketfav .fa-heart {
+  font-size: 30px;
+  color: red;
+}
+.forbasket .basketCards .card .basketfav .fa-shopping-basket {
+  font-size: 30px;
+  color: greenyellow;
+}
+
+.fovaritecard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.fovaritecard .about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 300px;
+}
+.fovaritecard .about h5 {
+  color: red;
+  text-align: center;
+  letter-spacing: 5px;
+}
+.fovaritecard .about h2 {
+  font-size: 34px;
+  text-align: center;
+}
+.fovaritecard .about p {
+  color: darkgrey;
+  text-align: center;
+}
+.fovaritecard .about .fa-delete-left {
+  font-size: 50px;
+  text-align: center;
+  color: red;
+}
+.fovaritecard .fovarite {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 auto;
+}
+.fovaritecard .fovarite .card {
+  padding: 5px 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  max-width: 380px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.fovaritecard .fovarite .card img {
+  width: 100%;
+  height: 50%;
+}
+.fovaritecard .fovarite .card h3 {
+  padding: 0 10px;
+  margin: 20px 0;
+}
+.fovaritecard .fovarite .card p {
+  padding: 0 10px;
+  color: grey;
+}
+.fovaritecard .fovarite .card h4 {
+  padding: 0 10px;
+  color: orange;
+}
+.fovaritecard .fovarite .card .basketfav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.fovaritecard .fovarite .card .basketfav .fa-heart {
+  font-size: 30px;
+  color: red;
+}
+.fovaritecard .fovarite .card .basketfav .fa-shopping-basket {
+  font-size: 30px;
+  color: greenyellow;
+}
+
+.fortodo {
+  text-align: center;
+}
+.fortodo form input {
+  width: 40%;
+}
+.fortodo form .toDoAdd {
+  width: 5%;
+}
+
+.todocontainer {
+  background-color: orange;
+  max-width: 800px;
+  padding: 40px 0;
+  border-radius: 32px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.todocontainer h1 {
+  font-size: 34px;
+  color: white;
+}
+.todocontainer form {
+  width: 100%;
+}
+.todocontainer form input {
+  width: 60%;
+  border: none;
+  height: 30px;
+  border-radius: 8px;
+  background-color: white;
+}
+.todocontainer form button {
+  height: 30px;
+  border: none;
+  width: 10%;
+  border-radius: 8px;
+  background-color: white;
+}
+.todocontainer .searchbox {
+  width: 60%;
+  height: 30px;
+  padding: 0 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+}
+.todocontainer ul {
+  list-style-type: none;
+  width: 60%;
+}
+.todocontainer ul li {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todocontainer button {
+  border: none;
+  margin: 10px;
+}
+.todocontainer #delete-all-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+}
+.todocontainer .a-z-short {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+}/*# sourceMappingURL=main.css.map */
