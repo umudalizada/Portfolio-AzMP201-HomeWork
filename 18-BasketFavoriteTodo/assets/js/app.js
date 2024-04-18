@@ -233,6 +233,7 @@ function renderTodos() {
           todoItem.style.textDecoration = "line-through"
         });
         
+        
 
         todoItem.appendChild(editIcons);
         editIcons.append(time,editIcon, deleteBtn,checkDiv);
