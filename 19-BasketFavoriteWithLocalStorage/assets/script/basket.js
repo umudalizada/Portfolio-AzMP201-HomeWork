@@ -80,6 +80,8 @@ function createBasketItem(element, container) {
       basketItem.remove();
       basket = basket.filter(item => item.id !== element.id);
       localStorage.setItem("basket", JSON.stringify(basket));
+  totalSum()
+
   });
 
 
@@ -96,10 +98,11 @@ function createBasketItem(element, container) {
         element.count--;
         counts.textContent = element.count;
         priceHeading.textContent=element.count*element.price
-        let totalSum=
         localStorage.setItem("basket", JSON.stringify(basket));
     }
     else{
+      basketItem.remove();
+
       basketItem.remove();
       basket = basket.filter(item => item.id !== element.id);
       localStorage.setItem("basket", JSON.stringify(basket));
