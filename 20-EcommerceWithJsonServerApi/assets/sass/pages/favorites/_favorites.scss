@@ -1,0 +1,124 @@
+.container{
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+.rightBox{
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 48px;
+    .item{
+        height: 480px;
+        background-color: #F9F9F9 ;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        padding: 10px;
+        .bag{
+            width: 218px;
+            height: 243px;
+           
+            margin-left: 71px;
+        }
+        .discount{
+            position: absolute;
+            top: 2%;
+            left: 5%;
+            width: 79px;
+            height: 32px;
+            background-color: #DF4244;
+            display: flex;
+            justify-content: center;
+            border-radius: 8px;
+            color: white;
+            align-items: center;
+        }
+        .new{
+            position: absolute;
+            top: 2%;
+            left: 5%;
+            width: 79px;
+            height: 32px;
+            background-color: #43D167;
+            display: flex;
+            justify-content: center;
+            border-radius: 8px;
+            color: white;
+            align-items: center;
+        }
+        .about{
+            margin-left: 24px;
+        }
+        .close{
+            position: absolute;
+            height: 32px;
+            width: 32px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 2%;
+            left: 90%;
+        }
+       .stars{
+        display: flex;
+        gap: 5px;
+        margin:16px 20px;
+       }
+        p{
+            font-size: 16px;
+        }
+        h4{
+            color: #F75145;
+            font-size: 1.5rem;
+             padding-left: 2rem;
+        } 
+       
+        button{
+            width: 312px;
+            height: 48px;
+            border-radius: 8px;
+            margin-top: 31px;
+        }
+       
+    }
+}
+
+
+
+
+@media only screen and (max-width: 992px) {
+    .rightBox{
+        grid-template-columns: 1fr;
+    }
+      
+  }
+
+.favSearch{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: 1rem;
+    .bar{
+        width: 40%;
+
+    }
+    .rightButtons{
+        padding-top: 1.4rem;
+        width: 40%;
+        display: flex;
+        gap: 1rem;
+       button{
+        background-color: #007878 ;
+        border: none;
+        color: white;
+        font-size: 1.1rem;
+       }
+    }
+}  
