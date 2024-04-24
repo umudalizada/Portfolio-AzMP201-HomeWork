@@ -2,7 +2,6 @@ import React from 'react'
 
 function Rightcenter() {
   return (
-    <div>
         <div className="total">
             <div className="repos">
                 <h4>Repos</h4>
@@ -17,7 +16,6 @@ function Rightcenter() {
                 <h5>9</h5>
             </div>
         </div>
-    </div>
   )
 }
 
