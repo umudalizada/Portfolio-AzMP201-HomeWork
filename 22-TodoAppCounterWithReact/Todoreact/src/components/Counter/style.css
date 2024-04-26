@@ -1,0 +1,22 @@
+.counterId{
+    padding: 100px 0;
+    background-color: purple;
+}
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.counter{
+    background-color: orange;
+}
+
+button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+}
+input{
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+}

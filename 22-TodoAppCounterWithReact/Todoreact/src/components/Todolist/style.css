@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.todoId{
+    background-color: purple;
+    padding: 100px 0;
+}
+
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.todolist{
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0;
+    border-radius: 32px;
+    margin-top: 100px;
+
+}
+.todolist h1{
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.forinput{
+    width: 70%;
+    display: flex;
+    gap: 20px;
+}
+.forinput input{
+    width: 85%;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+
+}
+.forinput button{
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    color: orange;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+
+}
+
+ul li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.editdelete{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+.editdelete button{
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    color: orange;
+}
+
