@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.Searchinp{
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 220, 80, 0.62);
+    outline: none;
+    border-radius: 8px;
+}
