@@ -3,11 +3,13 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Search from './Search';
 import SortButtons from './SortButtons';
+import { deleteById } from '../Service';
 
 const Admin = ({ state, dispatch }) => {
   const navigate = useNavigate();
 
   const handleDelete = (id) => {
+    deleteById(id)
     dispatch({
       type: "SetDelete",
       id,
