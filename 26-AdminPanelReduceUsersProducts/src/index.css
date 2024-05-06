@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+.Searchinp{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 8px;
+}
+
+
+.input-neon {
+    border: 1px solid transparent;
+    transition: border-color 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
+}
+  
+.input-neon:focus {
+    border-color: #508bfc;
+    box-shadow: 0 0 0 0.4rem rgba(80, 139, 252, 0.25); 
+}
+
+
+.form-container {
+    max-width: 20rem; 
+    margin-bottom: 1.25rem; 
+  }
+  
+  .select-box {
+    width: 100%; 
+    padding: 0.625rem 1rem; 
+    font-size: 0.875rem;
+    border: 1px solid #d1d5db; 
+    border-radius: 0.375rem;
+    background-color: #f3f4f6;
+    color: #111827; 
+    appearance: none; 
+  }
+  
+  .select-box:focus {
+    outline: none; 
+    border-color: #2563eb; 
+  }
+  
+  
