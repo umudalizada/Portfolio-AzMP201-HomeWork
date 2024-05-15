@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": "2",
+      "name": "Elvin",
+      "surname": "Mammadov",
+      "age": 32,
+      "email": "elvinm@example.com",
+      "username": "elvinm",
+      "password": "gizlisifre456",
+      "gender": "male",
+      "image": "https://randomuser.me/api/portraits/men/2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Nigar",
+      "surname": "Huseynova",
+      "age": 28,
+      "email": "nigarh@example.com",
+      "username": "nigarh",
+      "password": "gizemlisifre789",
+      "gender": "female",
+      "image": "https://randomuser.me/api/portraits/women/3.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Rauf",
+      "surname": "Rzayev",
+      "age": 29,
+      "email": "raufr@example.com",
+      "username": "raufr",
+      "password": "sifregizle321",
+      "gender": "male",
+      "image": "https://randomuser.me/api/portraits/men/4.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Aytac",
+      "surname": "Safarov",
+      "age": 23,
+      "email": "aytacs@example.com",
+      "username": "aytacs",
+      "password": "guvenlisifrem123",
+      "gender": "female",
+      "image": "https://randomuser.me/api/portraits/women/5.jpg"
+    }
+  ]
+}

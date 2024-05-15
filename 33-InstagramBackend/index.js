@@ -1,76 +1,67 @@
 const express = require('express')
+const cors=require('cors')
 const app = express()
 const port = 3000
-
-let users =[
+var bodyParser = require("body-parser");
+app.use(cors())
+app.use(bodyParser.json());
+let users = [
   {
       id: 1,
-      name: "John",
-      surname: "Doe",
-      age: 30,
-      email: "johndoe@example.com",
-      username: "johndoe30",
-      password: "password123",
-      gender: "male",
-      image: "https://example.com/profiles/johndoe.jpg"
+      name: "Aysel",
+      surname: "Quliyeva",
+      age: 25,
+      email: "ayselq@example.com",
+      username: "ayselq",
+      password: "güvenlişifre123",
+      gender: "female",
+      image: "https://randomuser.me/api/portraits/women/1.jpg"
   },
   {
       id: 2,
-      name: "Jane",
-      surname: "Smith",
-      age: 25,
-      email: "janesmith@example.com",
-      username: "janesmith25",
-      password: "securepass",
-      gender: "female",
-      image: "https://example.com/profiles/janesmith.jpg"
+      name: "Elvin",
+      surname: "Mammadov",
+      age: 32,
+      email: "elvinm@example.com",
+      username: "elvinm",
+      password: "gizlisifre456",
+      gender: "male",
+      image: "https://randomuser.me/api/portraits/men/2.jpg"
   },
   {
       id: 3,
-      name: "Alice",
-      surname: "Johnson",
-      age: 35,
-      email: "alice.j@example.com",
-      username: "alicej",
-      password: "strongpassword",
+      name: "Nigar",
+      surname: "Huseynova",
+      age: 28,
+      email: "nigarh@example.com",
+      username: "nigarh",
+      password: "gizemlisifre789",
       gender: "female",
-      image: "https://example.com/profiles/alicejohnson.jpg"
+      image: "https://randomuser.me/api/portraits/women/3.jpg"
   },
   {
       id: 4,
-      name: "Michael",
-      surname: "Brown",
-      age: 28,
-      email: "mbrown@example.com",
-      username: "mikebrown",
-      password: "michael28",
+      name: "Rauf",
+      surname: "Rzayev",
+      age: 29,
+      email: "raufr@example.com",
+      username: "raufr",
+      password: "sifregizle321",
       gender: "male",
-      image: "https://example.com/profiles/michaelbrown.jpg"
+      image: "https://randomuser.me/api/portraits/men/4.jpg"
   },
   {
       id: 5,
-      name: "Emily",
-      surname: "Taylor",
-      age: 22,
-      email: "emilyt@example.com",
-      username: "emtay",
-      password: "emily22",
+      name: "Aytac",
+      surname: "Safarov",
+      age: 23,
+      email: "aytacs@example.com",
+      username: "aytacs",
+      password: "guvenlisifrem123",
       gender: "female",
-      image: "https://example.com/profiles/emilytaylor.jpg"
+      image: "https://randomuser.me/api/portraits/women/5.jpg"
   },
-  {
-      id: 6,
-      name: "David",
-      surname: "Martinez",
-      age: 32,
-      email: "david.m@example.com",
-      username: "davidm32",
-      password: "martinez123",
-      gender: "male",
-      image: "https://example.com/profiles/davidmartinez.jpg"
-  }
-]
-
+];
 
 
 app.get('/', (req, res) => {

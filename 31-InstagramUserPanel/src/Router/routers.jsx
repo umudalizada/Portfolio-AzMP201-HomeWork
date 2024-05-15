@@ -3,6 +3,7 @@ import Layout from "../Layout/Layout"
 import Login from "../pages/Login"
 import Home from "../pages/Home"
 import Register from "../pages/Register"
+import Search from "../pages/Search"
 
 const routers=[
   {
@@ -20,6 +21,10 @@ const routers=[
       {
         path:'/home',
         element:<Home/>
+      },
+      {
+        path:"/search",
+        element: <Search/>
       }
     ]
   },
