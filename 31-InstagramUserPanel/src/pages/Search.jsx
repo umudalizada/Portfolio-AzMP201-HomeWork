@@ -31,7 +31,7 @@ const Search = () => {
         {
             arr && arr.map(elem=>{
                 return(
-                    <div key={elem.id} className="flex items-center justify-center flex-col bg-gray-700 p-4 rounded-lg w-48 space-y-4">
+                    <div key={elem._id} className="flex items-center justify-center flex-col bg-gray-700 p-4 rounded-lg w-48 space-y-4">
                     <img
                       className="rounded-full border-gray-100 shadow-sm w-24 h-24"
                       src={elem.image}
