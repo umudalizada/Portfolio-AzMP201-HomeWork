@@ -5,6 +5,7 @@ import { inpVal, search, usersArr } from '../Redux/Slice/searchSlice'
 
 const Search = () => {
     const {data : allUsers,error,isloading}=useGetAllProductQuery()
+    console.log(allUsers);
     const input = useSelector(state=>state.search.input)
     const arr = useSelector(state=>state.search.allUsers)
     const dispatch=useDispatch()

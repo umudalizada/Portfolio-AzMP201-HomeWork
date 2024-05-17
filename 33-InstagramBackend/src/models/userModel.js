@@ -33,6 +33,18 @@ const userSchema = mongoose.Schema({
         type:String,
         required:true
     },
+    posts: {
+        type:Array,
+    },
+    friends: {
+        type:Array,
+    },
+    blocked: {
+        type:Array,
+    },
+    messages: {
+        type:Array,
+    },
 })
 
 module.exports = mongoose.model("User", userSchema)

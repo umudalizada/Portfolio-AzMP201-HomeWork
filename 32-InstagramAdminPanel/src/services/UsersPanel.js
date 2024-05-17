@@ -6,10 +6,10 @@ export const UsersPanel = createApi({
     baseUrl: "http://localhost:3000/api/users",
   }),
   endpoints: (builder) => ({
-    getProductById: builder.query({
+    getUsertById: builder.query({
       query: (id) => `/${id}`,
     }),
-    getAllProduct: builder.query({
+    getAllUser: builder.query({
       query: () => `/`,
     }),
 
@@ -17,6 +17,14 @@ export const UsersPanel = createApi({
       query: (id) => ({
         url: `/${id}`,
         method: "DELETE",
+      }),
+    }),
+    
+    patchUserById: builder.mutation({
+      query: ({ id, obj }) => ({
+        url: `/${id}`,
+        method: "PATCH",
+        body: obj,
       }),
     }),
   }),
@@ -27,5 +35,5 @@ export const UsersPanel = createApi({
 
 
 export const {
-  useGetAllProductQuery, useDeleteUserMutation
+  useGetAllUserQuery, useGetUsertByIdQuery, useDeleteUserMutation,usePatchUserByIdMutation
 } = UsersPanel;

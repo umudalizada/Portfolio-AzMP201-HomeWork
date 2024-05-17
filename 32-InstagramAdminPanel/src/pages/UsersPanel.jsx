@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
-import { useDeleteUserMutation, useGetAllProductQuery } from '../services/UsersPanel';
+import { useDeleteUserMutation, useGetAllUserQuery } from '../services/UsersPanel';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const UsersPanel = () => {
-  const { data: alluser, refetch } = useGetAllProductQuery();
+  const { data: alluser, refetch } = useGetAllUserQuery();
   const [DeleteUser] = useDeleteUserMutation();
   const dispatch = useDispatch();
 
@@ -92,13 +93,18 @@ const UsersPanel = () => {
                             </td>
                             <td className="p-2 whitespace-nowrap">
                               <div className="text-lg text-center">
-                                
+                              <Link to={`/detail/${elem._id}`}>
                                 <button>Detail</button>
+                              </Link>
+
                               </div>
                             </td>
                             <td className="p-2 whitespace-nowrap">
                               <div className="text-lg text-center">
+                              <Link to={`/adduser/${elem._id}`}>
                                 <button>Edit</button>
+                              </Link>
+
                               </div>
                             </td>
                           </tr>

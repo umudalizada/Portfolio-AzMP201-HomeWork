@@ -12,10 +12,27 @@ export const UsersPanel = createApi({
     getAllProduct: builder.query({
       query: () => `/`,
     }),
+    postUser: builder.mutation({
+      query: ({ obj }) => ({
+        url: `/`,
+        method: "POST",
+        body: obj,
+      }),
+    }),
+    patchPost: builder.mutation({
+      query: ({id,  obj }) => ({
+        url: `/${id}`,
+        method: "PATCH",
+        body: obj,
+      }),
+    }),
   }),
+  
+  
+  
 });
 
 
 export const {
-  useGetAllProductQuery,
+  useGetAllProductQuery,usePostUserMutation,usePatchPostMutation
 } = UsersPanel;

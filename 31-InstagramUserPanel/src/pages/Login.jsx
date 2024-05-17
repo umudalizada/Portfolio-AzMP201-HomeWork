@@ -1,7 +1,27 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useRef } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { useGetAllProductQuery } from '../services/UsersPanel'
 
-const Login = () => {
+const Login =  () => {
+  const {data : allUsers}=useGetAllProductQuery()
+  const usernameVal=useRef()
+  const passwordVal=useRef()
+const navigate=useNavigate()
+
+  const handleSubmit=async(e)=>{
+    
+    e.preventDefault()
+    let control= await allUsers.find(elem=>elem.username==usernameVal.current.value && elem.password==passwordVal.current.value)
+   
+
+    if(control){
+      navigate("/home")
+      localStorage.setItem("userget",JSON.stringify(control))
+    }
+    else{
+      alert("Wrong username or password")
+    }
+  }
   return (
 
     <>
@@ -109,7 +129,7 @@ const Login = () => {
               <span className="text-gray-300 font-normal">or continue with</span>
               <span className="h-px w-16 bg-gray-200" />
             </div>
-            <form className="mt-8 space-y-6" action="#" method="POST">
+            <form className="mt-8 space-y-6" action="#"  onSubmit={handleSubmit}>
               <input type="hidden" name="remember" defaultValue="true" />
               <div className="relative">
                 <div className="absolute right-3 mt-4">
@@ -129,13 +149,13 @@ const Login = () => {
                   </svg>
                 </div>
                 <label className="ml-3 text-sm font-bold text-gray-700 tracking-wide">
-                  Email
+                  UserName
                 </label>
                 <input
+                ref={usernameVal}
                   className=" w-full text-base px-4 py-2 border-b border-gray-300 focus:outline-none rounded-2xl focus:border-indigo-500"
-                  type=""
-                  placeholder="mail@gmail.com"
-                  defaultValue="mail@gmail.com"
+                  type="text"
+               
                 />
               </div>
               <div className="mt-8 content-center">
@@ -143,10 +163,10 @@ const Login = () => {
                   Password
                 </label>
                 <input
+                ref={passwordVal}
                   className="w-full content-center text-base px-4 py-2 border-b rounded-2xl border-gray-300 focus:outline-none focus:border-indigo-500"
-                  type=""
-                  placeholder="Enter your password"
-                  defaultValue="*****|"
+                  type="password"
+                 
                 />
               </div>
               <div className="flex items-center justify-between">
