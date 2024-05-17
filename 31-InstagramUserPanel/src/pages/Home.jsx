@@ -505,32 +505,7 @@ const Home = () => {
         </div>
         <div className="w-2/5 h-12">
           {/*right menu*/}
-          <div className="relative text-gray-300 w-80 p-5 pb-0 mr-16">
-            <button type="submit" className="absolute ml-4 mt-3 mr-4">
-              <svg
-                className="h-4 w-4 fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-                version="1.1"
-                id="Capa_1"
-                x="0px"
-                y="0px"
-                viewBox="0 0 56.966 56.966"
-                style={{ enableBackground: "new 0 0 56.966 56.966" }}
-                xmlSpace="preserve"
-                width="512px"
-                height="512px"
-              >
-                <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
-              </svg>
-            </button>
-            <input
-              type="search"
-              name="search"
-              placeholder="Search Twitter"
-              className="bg-blue-800 h-10 px-10 pr-5 w-full rounded-full text-sm focus:outline-none bg-purple-white shadow rounded border-0"
-            />
-          </div>
+
           {/*second-trending tweet section*/}
 
           {/*third-people suggetion to follow section*/}
@@ -538,70 +513,50 @@ const Home = () => {
             <div className="flex">
               <div className="flex-1 m-2">
                 <h2 className="px-4 py-2 text-xl w-48 font-semibold text-white">
-                  Who to follow
+                  Your Friend
                 </h2>
               </div>
             </div>
             <hr className="border-gray-600" />
             {/*first person who to follow*/}
-            <div className="flex flex-shrink-0">
-              <div className="flex-1 ">
-                <div className="flex items-center w-48">
-                  <div>
-                    <img
-                      className="inline-block h-10 w-auto rounded-full ml-4 mt-2"
-                      src="https://pbs.twimg.com/profile_images/1121328878142853120/e-rpjoJi_bigger.png"
-                      alt=""
-                    />
+            <div >
+              {
+                userget && userget.friends.map(el=>{
+                  return(
+                    <div className="flex flex-shrink-0">
+
+                    <div className="flex-1 ">
+                    <div className="flex items-center w-48">
+                      <div>
+                        <img
+                          className="inline-block h-10 w-auto rounded-full ml-4 mt-2"
+                          src={el.image}
+                          alt=""
+                        />
+                      </div>
+                      <div className="ml-3 mt-3">
+                        <p className="text-sm leading-5 font-medium text-gray-400 group-hover:text-gray-300 transition ease-in-out duration-150">
+                          @{el.username}
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="ml-3 mt-3">
-                    <p className="text-base leading-6 font-medium text-white">
-                      Sonali Hirave
-                    </p>
-                    <p className="text-sm leading-5 font-medium text-gray-400 group-hover:text-gray-300 transition ease-in-out duration-150">
-                      @ShonaDesign
-                    </p>
+                  <div className="flex-1 px-4 py-2 m-2">
+                    <a href="" className=" float-right">
+                      <button className="bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded-full">
+                        Block
+                      </button>
+                    </a>
                   </div>
-                </div>
-              </div>
-              <div className="flex-1 px-4 py-2 m-2">
-                <a href="" className=" float-right">
-                  <button className="bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded-full">
-                    Follow
-                  </button>
-                </a>
-              </div>
+                  </div>
+
+                  )
+                })
+              }
             </div>
             <hr className="border-gray-600" />
             {/*second person who to follow*/}
-            <div className="flex flex-shrink-0">
-              <div className="flex-1 ">
-                <div className="flex items-center w-48">
-                  <div>
-                    <img
-                      className="inline-block h-10 w-auto rounded-full ml-4 mt-2"
-                      src="https://pbs.twimg.com/profile_images/1121328878142853120/e-rpjoJi_bigger.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="ml-3 mt-3">
-                    <p className="text-base leading-6 font-medium text-white">
-                      Sonali Hirave
-                    </p>
-                    <p className="text-sm leading-5 font-medium text-gray-400 group-hover:text-gray-300 transition ease-in-out duration-150">
-                      @ShonaDesign
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="flex-1 px-4 py-2 m-2">
-                <a href="" className=" float-right">
-                  <button className="bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded-full">
-                    Follow
-                  </button>
-                </a>
-              </div>
-            </div>
+
             <hr className="border-gray-600" />
             {/*show more*/}
             <div className="flex">
