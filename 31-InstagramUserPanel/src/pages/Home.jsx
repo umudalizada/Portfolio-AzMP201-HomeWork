@@ -33,6 +33,22 @@ const Home = () => {
     inpVal.current.value="",
     imageVal.current.value=""
   }
+
+  const handleBlock = async (el) => {
+    if(el._id!==userget._id){
+      let control=userget.blocked.find(elem=>elem.username==el.username)
+      if(!control){
+        let addBlock={...userget, blocked:[...userget.blocked, {image: el.image, username: el.username}],
+        friends: userget.friends.filter(friend => friend.username !== el.username)}
+        localStorage.setItem("userget",JSON.stringify(addBlock))
+
+        await patchPost({id:userget._id, obj:addBlock})
+      }
+
+    }
+
+  };
+
   return (
     <div className="bg-blue-900">
       <div className="flex">
@@ -152,8 +168,8 @@ const Home = () => {
               </svg>
               Lists
             </Link>
-            <a
-              href="#"
+            <Link
+              to="/profile"
               className="mt-1 group flex items-center px-2 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300"
             >
               <svg
@@ -168,7 +184,7 @@ const Home = () => {
                 <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
               </svg>
               Profile
-            </a>
+            </Link>
             <a
               href="#"
               className="mt-1 group flex items-center px-2 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300"
@@ -542,11 +558,11 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="flex-1 px-4 py-2 m-2">
-                    <a href="" className=" float-right">
-                      <button className="bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded-full">
+                   
+                      <button className="bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded-full" onClick={()=>handleBlock(el)}>
                         Block
                       </button>
-                    </a>
+                   
                   </div>
                   </div>
 
