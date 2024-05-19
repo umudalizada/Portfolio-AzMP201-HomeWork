@@ -24,25 +24,17 @@ const Search = () => {
   }
 
 
-  const handleFollow = async (id, user) => {
-    let addFollow = userget.friends;
-    let control = addFollow.find(el => el._id === id);
+  const handleFollow = async (el) => {
+    if(el._id!==userget._id){
+      let control=userget.friends.find(elem=>elem.username==el.username)
+      if(!control){
+        let addfriend={...userget, friends:[...userget.friends, {image: el.image, username: el.username}]}
 
-    if (!control) {
-      const updatedFriends = [...addFollow, {image: user.image, username: user.username}];
-      const userId = userget._id;
+        localStorage.setItem("userget",JSON.stringify(addfriend))
 
-      try {
-        await patchPost({ id: userId, obj: { friends: updatedFriends } });
-
-        userget.friends = updatedFriends;
-        localStorage.setItem("userget", JSON.stringify(userget));
-        refetch();
-      } catch (error) {
-        console.error("Error updating friends:", error);
+        await patchPost({id:userget._id, obj:addfriend})
+        refetch()
       }
-    } else {
-      alert("You are already friends");
     }
   };
 
@@ -71,7 +63,7 @@ const Search = () => {
                       alt="user image"
                     />
                     <h1 className="text-gray-50 font-semibold">{elem.name}</h1>
-                    <button className="px-8 py-1 border-2 border-indigo-600 bg-indigo-600 rounded-full text-gray-50 font-semibold" onClick={()=>handleFollow(elem._id,elem)}>
+                    <button className="px-8 py-1 border-2 border-indigo-600 bg-indigo-600 rounded-full text-gray-50 font-semibold" onClick={()=>handleFollow(elem)}>
                       Follow
                     </button>
                   </div>
