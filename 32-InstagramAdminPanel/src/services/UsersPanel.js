@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const UsersPanel = createApi({
   reducerPath: "userpanel",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:3000/api/users",
+    baseUrl: "https://portfolio-azmp201-homework-3d45.onrender.com/api/users",
   }),
   endpoints: (builder) => ({
     getUsertById: builder.query({
